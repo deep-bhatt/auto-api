@@ -1,0 +1,4 @@
+docker-compose.yaml
+.dockerignore
+__pycache__
+env
