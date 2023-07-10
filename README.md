@@ -26,6 +26,7 @@ The above commands builds and starts containers.
 
 3. Swagger API docs
 > Visit http://127.0.0.1:8000/docs to see the API documentation to upload a CSV file
+(it may take a while for a large dataset to be completely uploaded)
 
 4. Fetch data using "GET /data" endpoint
 example:
