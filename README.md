@@ -11,3 +11,11 @@ In simple words, AutoAPI takes your dataset, be it in CSV, excel, or SQL Data Ex
 * You want to set some pricing to monitize the data you're making accessable
 * You don't want to go through the burden to setup APIs yourself
 * If you check all or some of the boxes, then you can benefit from using AutoAPI
+
+## Roadmap
+
+* let the superuser create APIs with API builder
+* have a superuser token
+* security token for API access
+* pricing feature
+* custom database migrations system

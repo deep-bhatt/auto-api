@@ -2,12 +2,12 @@ import uvicorn
 from time import sleep
 from fastapi import FastAPI
 from autoapi.core.database import DatabaseConnection
-from autoapi.routes import upload
+from autoapi.routes import upload, api
 
 db = DatabaseConnection()
 while True:
     try:
-        sleep(0.2)
+        sleep(0.5)
         if db.connect():
             print('DB:Connection:Successful.')
             break
@@ -18,6 +18,7 @@ while True:
 print('DB:Bootstrap:', db.bootstrap_database())
 app = FastAPI()
 app.include_router(upload.router)
+app.include_router(api.router)
 
 
 if __name__ == "__main__":
