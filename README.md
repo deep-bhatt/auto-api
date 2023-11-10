@@ -28,6 +28,8 @@ The above commands builds and starts containers.
 > Visit http://127.0.0.1:8000/docs to see the API documentation to upload a CSV file
 (it may take a while for a large dataset to be completely uploaded)
 
+> CSV files by defult uses a comma as a delimiter, if your CSV file uses a custom delimiter, please specifiy that using 'delimiter' request parameter.
+
 4. Fetch data using "GET /data" endpoint
 example:
 > GET http://127.0.0.1:8000/data?fields=id,name&name=foobarbaz&actor=cuzcox
@@ -42,6 +44,7 @@ example:
 
 * have a superuser token to manage datasource and APIs access
 * security token for API access
+* add support for 'OR' operators
 * add support for limit & offset
 * add support for less than, less than equal, greater than, and greater than equal comparasion operators
 * add typing conversion support. ie. the returned fields must be of specified types.
